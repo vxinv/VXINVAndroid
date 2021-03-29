@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/icon_login_bg"
+    tools:context=".ui.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="380dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="@dimen/dp_67"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_login">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="智能环卫系统登录"
+            android:textColor="#2BC2BE"
+            android:textSize="24dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/icon_login_xian" />
+
+        <RelativeLayout
+            android:id="@+id/relative_username"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="账号：" />
+
+            <EditText
+                android:id="@+id/yhm"
+                android:textCursorDrawable="@drawable/guangbiao"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_login_username"
+                android:layout_toRightOf="@id/userName"
+                android:hint="请输入账号"
+                android:paddingLeft="25dp"
+                android:textColorHint="@color/main_hint_color"
+                android:textSize="17dp"
+                 />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/userName"
+                android:src="@mipmap/icon_user_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mmll"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="29dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/userPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="密码：" />
+
+            <EditText
+                android:id="@+id/mm"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/userPwd"
+                android:background="@drawable/bg_login_username"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:paddingLeft="25dp"
+                android:textCursorDrawable="@drawable/guangbiao"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/userPwd"
+                android:src="@mipmap/icon_user_pwd" />
+
+            <ToggleButton
+                android:id="@+id/togglePwd"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/mmqh"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/denglu"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/mmll"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_login_bt"
+            android:text="登录"
+            android:textColor="@color/color_white"
+            android:textSize="20dp"></TextView>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/icon_yingzi" />
+
+    <TextView
+        android:id="@+id/tv_com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="版权所有 © 2019万谦科技 "
+        android:textColor="#FFFFFF" />
+</RelativeLayout>

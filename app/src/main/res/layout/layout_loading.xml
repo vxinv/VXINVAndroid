@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.wanqian.widget.LoadingPage xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loading_bg"
+        android:padding="16dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.cunoraz.gifview.library.GifView
+            android:id="@+id/loading_gif_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:gif="@mipmap/loading" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loading_btn_reload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/common_button_rounder_rect_style_1"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:minHeight="0dp"
+        android:text="@string/loading_text_reloading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loading_layout" />
+
+    <TextView
+        android:id="@+id/loading_tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="16dp"
+        android:text="@string/loading_text_default_error_msg"
+        app:layout_constraintBottom_toTopOf="@+id/loading_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/loading_group_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="loading_btn_reload,loading_tv_msg" />
+
+</com.example.wanqian.widget.LoadingPage >

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#acfffd"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/right_icon1"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/left_icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/icon_geren_green" />
+
+        <TextView
+            android:id="@+id/left_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/left_icon1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxEms="8"
+            android:singleLine="true"
+            android:text="未登录"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/icon_jiantou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:src="@mipmap/icon_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_icon2"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/left_icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/icon_password" />
+
+        <TextView
+            android:id="@+id/left_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/left_icon2"
+            android:gravity="center_vertical"
+            android:text="修改密码"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:src="@mipmap/icon_right" />
+    </RelativeLayout>
+
+   <!-- <RelativeLayout
+        android:id="@+id/right_icon3"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/left_icon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/icon_car_message" />
+
+        <TextView
+            android:id="@+id/left_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/left_icon3"
+            android:gravity="center_vertical"
+            android:text="绑定车辆"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:src="@mipmap/icon_right" />
+    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/right_icon4"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/left_icon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/icon_bangzhu" />
+
+        <TextView
+            android:id="@+id/left_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/left_icon4"
+            android:gravity="center_vertical"
+            android:text="帮助反馈"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:src="@mipmap/icon_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_icon5"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/left_icon5"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/icon_guanyu" />
+
+        <TextView
+            android:id="@+id/left_text5"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/left_icon5"
+            android:text="关于"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:src="@mipmap/icon_right" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tuichu"
+        android:paddingTop="@dimen/dp_7"
+        android:paddingBottom="@dimen/dp_7"
+        android:paddingLeft="@dimen/dp_50"
+        android:paddingRight="@dimen/dp_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/exit_login_state"
+        android:text="退出登录"
+        android:textColor="@color/color_white"
+        android:textSize="15dp"
+        ></TextView>
+
+</LinearLayout>

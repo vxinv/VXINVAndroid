@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:paddingTop="24dp">
+
+        <TextView
+            android:id="@+id/tv_actionBar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/cancel"
+            android:textColor="#ff7cacf6"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_actionBar_folders"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawableEnd="@mipmap/icon_album_index"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/all_media"
+            android:textColor="#383838"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_actionBar_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/confirm"
+            android:textColor="@color/image_picker_add"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#E5E5E5" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_main_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

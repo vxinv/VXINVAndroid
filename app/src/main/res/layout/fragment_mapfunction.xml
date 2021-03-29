@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/new_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.amap.api.maps.MapView>
+
+    <TextView
+        android:id="@+id/new_btn_job"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_down_shape"
+        android:text="接受任务"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+</RelativeLayout>

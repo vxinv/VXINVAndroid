@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAFFFE"
+    tools:context=".ui.UpdatePasswordActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:minHeight="?attr/actionBarSize">
+
+            <LinearLayout
+                android:id="@+id/toolbar_iv"
+                android:layout_width="50dp"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:layout_width="11.62dp"
+                    android:layout_height="18.5dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginRight="17dp"
+                    android:src="@mipmap/icon_back_left"></ImageView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/toolbar_tv"
+                android:layout_width="73.5dp"
+                android:layout_height="25dp"
+                android:text="修改密码"
+                android:textColor="#007256"
+                android:textSize="18dp"></TextView>
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/rlyuan"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/original_et"
+                android:layout_centerVertical="true"
+                android:layout_width="458dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="272dp"
+                android:layout_marginRight="229dp"
+                android:background="@null"
+                android:drawableBottom="@drawable/xiahua"
+                android:hint="请输入原密码"
+                android:maxLength="10"
+                android:password="true"
+                android:textColor="#007256"
+                android:textColorHint="#ABABAB"
+                android:textCursorDrawable="@drawable/guangbiao"
+                android:textSize="17dp"
+                android:theme="@style/MyEditText" />
+
+            <ToggleButton
+                android:id="@+id/original_bt"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="700dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/mmqh"
+                android:padding="10dp"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlxin"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlyuan"
+            android:layout_marginTop="29dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/newPs_et"
+                android:layout_centerVertical="true"
+                android:layout_width="458dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="272dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="229dp"
+                android:background="@null"
+                android:drawableBottom="@drawable/xiahua"
+                android:hint="请输入新密码(最少6位)"
+                android:maxLength="10"
+                android:password="true"
+                android:textColor="#007256"
+                android:textColorHint="#ABABAB"
+                android:textCursorDrawable="@drawable/guangbiao"
+                android:textSize="17dp"
+                android:theme="@style/MyEditText"></EditText>
+
+            <ToggleButton
+                android:id="@+id/original_new_bt"
+                android:layout_centerVertical="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="700dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/mmqh"
+                android:padding="10dp"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlque"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlxin"
+            android:layout_marginTop="29dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/sure_NewPs_et"
+                android:layout_centerVertical="true"
+                android:layout_width="458dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="272dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="229dp"
+                android:background="@null"
+                android:drawableBottom="@drawable/xiahua"
+                android:hint="请输入确认密码"
+                android:maxLength="10"
+                android:password="true"
+                android:textColor="#007256"
+                android:textColorHint="#ABABAB"
+                android:textCursorDrawable="@drawable/guangbiao"
+                android:textSize="17dp"
+                android:theme="@style/MyEditText" />
+
+            <ToggleButton
+                android:id="@+id/original_new_sure"
+                android:layout_centerVertical="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="700dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/mmqh"
+                android:padding="10dp"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:gravity="center"
+            android:layout_width="458dp"
+            android:layout_height="54dp"
+            android:layout_below="@id/rlque"
+            android:layout_marginLeft="272dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="229dp"
+            android:background="@mipmap/icon_xiugai_pwd"
+            android:text="修改密码"
+            android:textColor="#F5EFFF"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+</ScrollView>

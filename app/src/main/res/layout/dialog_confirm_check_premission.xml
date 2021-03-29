@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_400"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ba_dialog"
+    android:paddingLeft="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_20"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/im_back"
+        android:layout_marginTop="@dimen/dp_25"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="权限申请:"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_16"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_content"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@null"
+        android:textColor="@color/text_66"
+        android:textSize="@dimen/sp_14"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/im_back"
+        android:layout_marginTop="@dimen/dp_25"
+        android:gravity="center"
+        android:text="存储权限："
+        android:textStyle="bold"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_16"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@null"
+        android:text="降低流量消耗"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_16"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/im_back"
+        android:layout_marginTop="@dimen/dp_25"
+        android:gravity="center"
+        android:text="定位权限："
+        android:textStyle="bold"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_16"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@null"
+        android:text="获取您的位置信息"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_16"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/im_back"
+        android:layout_marginTop="@dimen/dp_25"
+        android:gravity="center"
+        android:text="设备权限："
+        android:textStyle="bold"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_16"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@null"
+        android:text="检验IMEI码，保证账号安全，防止账号被盗。"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_14"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_12"
+        android:orientation="horizontal"
+        android:layout_below="@+id/iv_update">
+
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="前往开启"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:textColor="@color/my_head_color"
+            android:textSize="@dimen/sp_16" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

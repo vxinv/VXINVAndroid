@@ -1,0 +1,143 @@
+// 声明是Android程序，
+//com.android.application 表示这是一个应用程序模块
+//com.android.library 标识这是一个库模块
+//而这区别：前者可以直接运行，后着是依附别的应用程序运行
+apply plugin: 'com.android.application'
+apply plugin: 'idea'
+android {
+    compileSdkVersion 29  //设置编译时用的Android版本
+    buildToolsVersion "29.0.3"  //设置编译时使用的构建工具的版本，Android Studio3.0后去除此项配置
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    idea {
+        module {
+            downloadJavadoc = true
+            downloadSources = true
+        }
+    }
+
+    //  targetSdkVersion : 指定项目的目标版本，表示在该目标版本上已经做过充分测试，系统会为该应用启动一些对应该目标系统的最新功能特性，Android系统平台的行为变更
+    //  只有targetSdkVersion的属性值被设置为大于或等于该系统平台的API版本时，才会生效。例如，若指定targetSdkVersion值为22，则表示该程序最高只在Android5.1版本上做过充分测试，
+    //  在Android6.0系统上（对应targetSdkVersion为23）拥有的新特性如系统运行时权限等功能就不会被启用。
+
+    defaultConfig {
+        applicationId "com.example.wanqian"
+        minSdkVersion 15 //项目最低兼容的版本
+        targetSdkVersion 28  //项目的目标版本
+        versionCode 2 //版本号
+        versionName "1.6" //版本名称
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir(['libs'])
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //存在冲突文件
+    packagingOptions {
+        exclude 'assets/location_map_gps_locked.png'
+        exclude 'assets/location_map_gps_3d.png'
+    }
+
+    //执行 Run app或者Build->Build apk就会自动在module name/app/build/outputs/apk路径下生成Apk文件
+    //另一种打包方式是Build->Generate Signed APK填写签名信息生成Apk。
+    /*signingConfigs {// 自动化打包配置
+        release {// 线上环境
+            keyAlias 'test'
+            keyPassword '123456'
+            storeFile file('test.keystore')
+            storePassword '123456'
+        }
+        debug {// 开发环境
+            keyAlias 'test'
+            keyPassword '123456'
+            storeFile file('test.keystore')
+            storePassword '123456'
+        }
+    }*/
+
+}
+
+
+
+repositories{
+    //libs 目录
+    flatDir{
+        dirs "libs"
+    }
+}
+
+dependencies {
+   // implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.amap.api:navi-3dmap:latest.integration'
+    implementation 'com.amap.api:location:latest.integration'
+    implementation 'com.amap.api:search:latest.integration'
+
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.5.0' // 必要依赖，和Rxjava结合必须用到
+    implementation "io.reactivex.rxjava2:rxjava:2.1.3"            // 必要rxjava2依赖
+    implementation "io.reactivex.rxjava2:rxandroid:2.0.1"       // 必要rxandrroid依赖，切线程时需要用到
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'        //Retrofit依赖
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'  //可选依赖，解析json字符所用
+    //design：
+    implementation 'com.google.android.material:material:1.2.1'
+    //图片：
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    //RecyclerView：
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    //SmartRefreshLayout依赖：
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-14'
+    //动图:
+    implementation 'com.github.Cutta:GifView:1.1'
+    implementation 'com.zftlive.android.library:feature-android-imageloader:1.0.0'
+    //抽取的库：
+    implementation 'com.trello.rxlifecycle2:rxlifecycle:2.2.1'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-android:2.2.1'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.1'
+    //动态权限申请库
+    implementation 'pub.devrel:easypermissions:1.3.0'
+    implementation 'com.zhihu.android:matisse:0.5.2-beta3'
+    implementation files('com.amap.api.maps.utils')
+
+    //butterknife
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    implementation project(path: ':imagepicker')
+
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation files('src/main/libs/com.baidu.tts_2.5.5.109.20191014_01b8485.jar')
+    implementation 'com.github.ForgetAll:LoadingDialog:v1.1.2'
+
+    implementation "com.umeng.umsdk:common:9.1.0"
+    implementation "com.umeng.umsdk:asms:1.1.3" // asms包依赖(必选)
+    implementation "com.umeng.umsdk:crash:0.0.4" // native crash包依赖(必选)
+
+    compile 'com.fasterxml.jackson.core:jackson-core:2.9.0.pr3'
+
+    
+
+
+
+}

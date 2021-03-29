@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">智能垃圾收运</string>
+
+    <string name="terminal">终端监控</string>
+    <string name="location">设备定位</string>
+    <string name="current">当前作业</string>
+    <string name="history">历史作业</string>
+    <string name="personage">个人中心</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="loading_text_reloading">重新加载</string>
+    <string name="loading_text_default_error_msg">加载失败啦</string>
+    <string name="clearanceServiceClosed">清运服务已关闭</string>
+    <string name="allTheCurrentTasksAreCompleted">当前任务全部完成</string>
+    <string name="theCurrentVehicleIsNotTurnedOn">当前车辆未开启</string>
+    <string name="countdown">清收结束剩余</string>
+</resources>

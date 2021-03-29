@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAFFFE"
+    tools:context=".ui.AboutActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:minHeight="?attr/actionBarSize">
+
+        <LinearLayout
+            android:id="@+id/toolbar_iv"
+            android:layout_width="50dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:layout_width="11.62dp"
+                android:layout_height="18.5dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginRight="17dp"
+                android:src="@mipmap/icon_back_left"></ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/toolbar_tv"
+            android:layout_width="73.5dp"
+            android:layout_height="25dp"
+            android:text="关于"
+            android:textColor="#007256"
+            android:textSize="18dp"></TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/about_tupan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="47dp"
+        android:text="智能环卫v1.0.2"
+        android:textColor="#007256"
+        android:textSize="17dp"></TextView>
+
+    <ImageView
+        android:id="@+id/about_iv"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="35dp"
+        android:layout_toLeftOf="@id/about_tupan"
+        android:src="@mipmap/icon_yang"></ImageView>
+
+    <TextView
+        android:id="@+id/about_tiaokuang"
+        android:gravity="center"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/about_iv"
+        android:layout_marginLeft="296dp"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/bg_login_bt"
+        android:text="服务条款"
+        android:textColor="#F5EFFF"
+        android:textSize="17dp"></TextView>
+
+    <TextView
+        android:id="@+id/about_zhence"
+        android:gravity="center"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/about_iv"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="47dp"
+        android:layout_toRightOf="@id/about_tiaokuang"
+        android:background="@drawable/bg_login_bt"
+        android:text="隐私政策"
+        android:textColor="#F5EFFF"
+        android:textSize="17dp"></TextView>
+
+    <TextView
+        android:id="@+id/about_banquang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_tiaokuang"
+        android:layout_marginLeft="372dp"
+        android:layout_marginTop="56dp"
+        android:text="版权所有 © 2019 万谦科技 "
+        android:textColor="#007256"
+        android:textSize="17dp"></TextView>
+
+</RelativeLayout>

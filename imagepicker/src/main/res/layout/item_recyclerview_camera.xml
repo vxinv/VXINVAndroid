@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lcw.library.imagepicker.view.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/srl_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lcw.library.imagepicker.view.SquareImageView
+        android:id="@+id/iv_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/icon_image_camera" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:background="#F3F3F3" />
+
+</com.lcw.library.imagepicker.view.SquareRelativeLayout>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.zftlive.android.library:feature-android-imageloader:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/775dcfac59e3cd46028c1b8c060d9d5b/jetified-feature-android-imageloader-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/775dcfac59e3cd46028c1b8c060d9d5b/jetified-feature-android-imageloader-1.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zftlive.android.library/feature-android-imageloader/1.0.0/e491af2624aa5f4373dcb58c7a0cf6748e3c1a80/feature-android-imageloader-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zftlive.android.library/feature-android-imageloader/1.0.0/54d93c16365791b770e164934dd98d7017d334e6/feature-android-imageloader-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

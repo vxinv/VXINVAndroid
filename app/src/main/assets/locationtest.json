@@ -1,0 +1,86 @@
+{
+  "msg": "接受成功",
+  "code": 200,
+  "data": [
+    {
+      "area": 0,
+      "full": 0,
+      "garbageId": -1,
+      "groupId": 0,
+      "latitude": 39.740247,
+      "longitude": 116.171927
+    },
+    {
+      "area": 0,
+      "full": 0,
+      "garbageId": -1,
+      "groupId": 0,
+      "latitude": 39.740378,
+      "longitude": 116.171923
+    },
+    {
+      "area": 0,
+      "full": 0,
+      "garbageId": -1,
+      "groupId": 0,
+      "latitude": 39.740378,
+      "longitude": 116.172179
+    },
+    {
+      "area": 0,
+      "full": 0,
+      "garbageId": -1,
+      "groupId": 0,
+      "latitude": 39.740365,
+      "longitude": 116.172231
+    },
+    {
+      "area": 0,
+      "full": 0,
+      "garbageId": -1,
+      "groupId": 0,
+      "latitude": 39.740299,
+      "longitude": 116.17227
+    },
+    {
+      "area": 0,
+      "full": 0,
+      "garbageId": -1,
+      "groupId": 0,
+      "latitude": 39.740187,
+      "longitude": 116.17227
+    },
+    {
+      "area": 79,
+      "full": 1,
+      "garbageId": 576,
+      "groupId": 576,
+      "latitude": 39.740183,
+      "longitude": 116.172282
+    },
+    {
+      "area": 79,
+      "full": 1,
+      "garbageId": 575,
+      "groupId": 575,
+      "latitude": 39.739952,
+      "longitude": 116.172282
+    },
+    {
+      "area": 79,
+      "full": 1,
+      "garbageId": 574,
+      "groupId": 574,
+      "latitude": 39.739693,
+      "longitude": 116.172051
+    },
+    {
+      "area": 79,
+      "full": 1,
+      "garbageId": 573,
+      "groupId": 573,
+      "latitude": 39.739713,
+      "longitude": 116.171375
+    }
+  ]
+}
